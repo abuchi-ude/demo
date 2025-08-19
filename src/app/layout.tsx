@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+// import React from "react";
+import SideBar from "../../components/Sidebar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// import Trigram from '/Users/user/Desktop/mhi-demo/public/icons/menu_24dp_107082_FILL0_wght400_GRAD0_opsz24.svg'
+// import {SideBarMobile} from '../../components/Sidebar'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,13 +25,36 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+
+{ 
+  //  const [rotate, setRotate] = React.useState(false)
+  // const handleRotate = () => {
+
+  //   setRotate(!rotate)
+  // }
+
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
+        <section className="w-[310px] hidden md:block">
+          <SideBar />
+
+          {/* <div id='trigram' className={`flex ${rotate ? 'flex-col items-start' : ''} items-center`}>
+            <section>
+            <Image src={Trigram} alt='menu' onClick={handleRotate} className={`${rotate ? 'rotate-90 transition-transform duration-300 ease-in-out' : ''}`}/>
+            </section>
+            <section>
+            {rotate ? <SideBarMobile /> : ''}
+            </section>
+          </div> */}
+        </section>
+
+        <section className="w-full p-4">
         {children}
+        </section>
       </body>
     </html>
   );
