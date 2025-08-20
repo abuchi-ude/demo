@@ -53,7 +53,7 @@ const SideBar = () => {
 
             </div>
             <div>
-                <Link href={'/inventory'} className={` ${pathname === '/inventory' && 'bg-[#107082]'} flex items-center justify-start gap-2 text-[#949EA0] font-medium pl-3 pr-6 py-[10px]`}>'
+                <Link href={'/inventory'} className={` ${pathname === '/inventory' && 'bg-[#107082]'} flex items-center justify-start gap-2 text-[#949EA0] font-medium pl-3 pr-6 py-[10px]`}>
                 <Image src={Box} alt='Inventory' />
                 <p>Inventory</p>
                 </Link>
