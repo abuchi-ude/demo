@@ -24,7 +24,7 @@ const Prescription = () => {
             <p className='text-xs'>Monday, July 21, 2025 - 5:01 PM</p>
           </section>
           <section className='flex gap-2'>
-            <Image src={Notification} alt='notification' className='p-1 w-10 h-10 border border-[#DEE1E1]'/>
+            <Image src={Notification} alt='notification' className='p-1 w-10 h-10 border cursor-pointer border-[#DEE1E1]'/>
             <Image src={Ellipse} alt='ellipse' />
             <div className='flex flex-col justify-between'>
               <p className='text-sm font-semibold'>Reuben O.</p>
@@ -40,11 +40,11 @@ const Prescription = () => {
             </div>
           </section>
           <section className='grid grid-cols-2 items-center gap-2 text-[10px] md:text-base'>
-            <button className='text-white bg-[#107082] font-bold rounded-md py-2 px-4 flex gap-2 items-center '>
+            <button className='text-white bg-[#107082] font-bold rounded-md py-2 px-4 flex gap-2 items-center cursor-pointer'>
               <Image src={AddSign} alt=''/>
               <p>Upload Prescription</p>
             </button>
-            <button className='text-[#107082] border font-semibold rounded-md py-2 px-4 border-[#DEE1E1]'>Sync from EHR</button>
+            <button className='text-[#107082] border font-semibold rounded-md py-2 px-4 border-[#DEE1E1] cursor-pointer'>Sync from EHR</button>
             
           </section>
         </div>
@@ -52,7 +52,7 @@ const Prescription = () => {
       <section id='second-section' className='bg-[#F5F6F6] mb-4 p-5 rounded-[20px]'>
          <div className='flex justify-between border-b border-[#E1E1E1] pb-4 mb-4'>
           <h3 className='md:text-[18px] text-sm font-medium flex items-center'>Associated Patient Data</h3>
-          <button className='bg-[#00AEEF] md:text-[16px] text-xs rounded-md py-2 px-4 text-white'>Run AI Check</button>
+          <button className='bg-[#00AEEF] md:text-[16px] text-xs rounded-md py-2 px-4 text-white cursor-pointer'>Run AI Check</button>
         </div>
         <div id='patient-data' className='bg-white border border-[#DEE1E1]  rounded-lg py-8 flex flex-col md:flex-row px-4'>
           <section id='user-details' className='md:w-5/12 w-full flex justify-between gap-4 md:border-0 border-b border-[#E1E1E1] pb-8'>
@@ -107,7 +107,7 @@ const Prescription = () => {
       <section id='third-section' className='rounded-[20px] bg-[#F5F6F6] p-5'>
         <div className='flex justify-between border-b border-[#E1E1E1] pb-4 mb-4'>
           <p className='font-medium text-[18px] text-[#00191C]'>Ai Review Summary</p>
-          <p className='font-semibold text-sm text-[#107082]'>View All</p>
+          <p className='font-semibold text-sm text-[#107082] cursor-pointer'>View All</p>
         </div>
         <div className=' flex flex-col gap-4'>
           <section className='flex rounded-lg border border-[#DEE1E1] bg-white'>

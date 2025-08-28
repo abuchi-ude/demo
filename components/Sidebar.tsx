@@ -33,7 +33,7 @@ const SideBar = () => {
             <div className='flex flex-col gap-2 rounded-lg'>
                 <p className='font-medium text-sm'>Ready to assist</p>
                 <p className='text-xs'>Monitoring prescriptions and inventory</p>
-                <button className='bg-btn px-4 rounded-md py-[10px] w-fit text-sm font-semibold text-white'>Start Review</button>
+                <button className='bg-btn px-4 rounded-md py-[10px] w-fit text-sm font-semibold text-white cursor-pointer'>Start Review</button>
             </div>
         </section>
         <section className='flex flex-col gap-4 '>            
